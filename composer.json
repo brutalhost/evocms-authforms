@@ -1,5 +1,5 @@
 {
-  "name": "evolutioncms/evocms-authforms",
+  "name": "brutalhost/evocms-authforms",
   "require": {
     "webber12/evocms-user": "*"
   },
