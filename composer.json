@@ -1,0 +1,19 @@
+{
+  "name": "evolutioncms/evocms-authforms",
+  "require": {
+    "webber12/evocms-user": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "EvolutionCMS\\Authforms\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "EvolutionCMS\\Authforms\\AuthformsServiceProvider"
+      ]
+
+    }
+  }
+}

@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    margin-inline: 0.25em;
+    width: 100%;
+    background: #FFFFFF;
+    padding: 1.5rem;
+    border: 1px solid #B0B0B0;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    /*margin-top: 0;*/
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 14px;
+    border: 1px solid #B0B0B0;
+    border-radius: 4px;
+    background: #FAFAFA;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    border-color: #005A9E;
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(0, 90, 158, 0.3);
+}
+
+.form-group div[data-error] {
+    color: #D83B3B;
+    font-size: 12px;
+    margin-top: 0.5rem;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 14px;
+    background-color: #005A9E;
+    color: #FFFFFF;
+    border: 1px solid #004080;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #004080;
+}
+
+.btn:active {
+    background-color: #003366;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+a {
+    font-size: 14px;
+    color: #005A9E;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    font-size: 14px;
+    color: #005A9E;
+    text-decoration: none;
+    margin: 0.5rem 0;
+}
+
+.footer-links a:hover {
+    color: #003366;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #B0B0B0;
+    margin: 1rem 0;
+}
+
+.sticker {
+    width: 8em; /* 200px in rem */
+    height: auto;
+    margin-bottom: 1rem;
+}
+.success-message {
+    font-size: 1rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}

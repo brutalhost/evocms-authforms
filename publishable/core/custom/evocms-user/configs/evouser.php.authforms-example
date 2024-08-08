@@ -1,0 +1,23 @@
+<?php
+
+return [
+    "LogoutRedirectId" => config('authforms.LogoutRedirectId'),
+    "AuthRedirectId" => config('authforms.AuthRedirectId'),
+
+    "RegisterVerifyUserPageId" => config('authforms.RegisterVerifyUserPageId'),
+    "ResetPasswordPageId" => config('authforms.ResetPasswordPageId'),
+
+    'RegisterVerifyUser' => config('authforms.SendVerificationEmailAfterRegistration'),
+    "RegisterCustomFields" => ['fullname'],
+    "RegisterCustomRules" => [
+        'fullname' => 'required|min:6',
+    ],
+
+    "RegisterPrepare" => function ($data) {
+        $data['role_id'] = config('authforms.RegisterUserWithRole');
+        $data['user_groups'] = config('authforms.RegisterUserWithUserGroups');
+        return $data;
+    },
+
+    'RegisterUserAuth' => config('authforms.InstantAuthAfterRegistration'),
+];
