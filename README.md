@@ -89,7 +89,7 @@ class BaseController extends TemplateController
     public function process()
     {
         $currentUser = app('evouser')->do('user', ['web']);
-        $this->data['user'] = $currentUser === null ? null :  app('evouser')->do('ProfileInfo', [ 'user' => $currentUser ]);
+        $this->data['user'] = $currentUser === null ? null :  app('evouser')->withoutRules()->do('ProfileInfo', [ 'user' => $currentUser ]);
         $this->setData();
         $this->addViewData($this->data);
     }
