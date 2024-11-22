@@ -15,7 +15,7 @@ return [
     'email' => 'Email',
     'email_placeholder' => 'Enter your email',
     'fullname' => 'Full name',
-    'fullname_placeholder' => 'This name will be displayed on the site.',
+    'fullname_placeholder' => 'This name will be displayed on the site',
     'password_confirmation' => 'Password confirmation',
     'password_confirmation_placeholder' => 'Confirm your password',
 
